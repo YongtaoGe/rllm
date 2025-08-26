@@ -27,7 +27,7 @@ fi
 python3 -m verl.trainer.main_ppo \
     algorithm.adv_estimator=grpo \
     data.train_files=data/train/math/deepscaler_train.parquet \
-    data.val_files=data/test/math/aime.parquet \
+    data.val_files=data/test/math/aime-2024.parquet \
     data.train_batch_size=128 \
     data.val_batch_size=512 \
     data.max_prompt_length=1024 \
@@ -59,7 +59,7 @@ python3 -m verl.trainer.main_ppo \
     trainer.project_name='deepscaler' \
     trainer.experiment_name='deepscaler-1.5b-8k' \
     +trainer.val_before_train=True \
-    trainer.n_gpus_per_node=8 \
+    trainer.n_gpus_per_node=4 \
     trainer.nnodes=1 \
     trainer.save_freq=20 \
     trainer.test_freq=20 \
