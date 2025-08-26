@@ -4,5 +4,4 @@ HF_HUB_OFFLINE=0 python scripts/data/download_hf.py \
 --dataset agentica-org/DeepScaleR-Preview-Dataset \
 --save_dir rllm/data/train/math \
 --use_hf_transfer False \
---use_mirror False \
---token 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
+--use_mirror False 
